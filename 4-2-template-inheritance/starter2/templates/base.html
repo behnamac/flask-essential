@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% block bb %}app{% endblock %}</title>
-</head>
-<body>
-  <h1>{% block cc %}{% endblock %}</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}App{% endblock %}</title>
+  </head>
+  <body>
+    <h1>{% block bb %}{% endblock %}</h1>
+    <h2>{% block cc %}app{% endblock %}</h2>
+    {% block items %}{% endblock %}
+  </body>
 </html>

@@ -1,5 +1,15 @@
 {% extends "base.html" %}
 
+{% block title %}Home{% endblock %}
+
 {% block bb %}{{ bb }}{% endblock %}
 
 {% block cc %}{{ cc }}{% endblock %}
+
+{% block items %}
+    <ul>
+        {% for item in items %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
