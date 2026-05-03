@@ -1,9 +1,13 @@
-<!doctype html>
-<html>
-<head>
-    <title>{{ title }}</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
     <h1>Hello, {{ user.username }}!</h1>
-</body>
-</html>
+    <h3>Here is the list that you should buy</h3>
+    <ul>
+        {% for item in items %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
